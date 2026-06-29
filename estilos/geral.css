@@ -1,0 +1,120 @@
+body {
+  background: radial-gradient(
+    circle,
+    rgb(20, 20, 20) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bar {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.player {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress {
+  width: 300px;
+}
+
+input {
+  accent-color: currentcolor;
+}
+
+#sound {
+  accent-color: white;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  width: 20px;
+}
+
+button.play {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/Mask group.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+button.play.ativo {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/pause.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.inicio {
+  text-decoration: none;
+  display: grid;
+  justify-items: center;
+  justify-content: start;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+
+.home-img {
+  width: 30;
+  height: 30px;
+}
+
+audio {
+  display: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 50px;
+}
+
+.soundIcon {
+  cursor: pointer;
+}
+
+.som {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: end;
+  align-items: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>SpotVibe</title>
+    <link rel="stylesheet" href="../estilos/hangry.css">
+    <link rel="stylesheet" href="../estilos/inicial.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="musica">
+        <img class="capa" src="" alt="">
+        <div class="musica-nomes">
+            <h2 class="titulo"></h2>
+            <p class="artista"></p>
+        </div>
+    </div>
+
+    <div class="bar">
+        <span id="current">0:00</span>
+        <input style="color: #dd0606;" type="range" id="progress" value="0" min="0">
+        <span id="duration">0:00</span>
+    </div>
+    <div class="player">
+        <button class="prev"><img class="img-botao" src="../img/previou.png" alt=""></button>
+        <button class="play"></button>
+        <button class="next"><img class="img-botao" src="../img/nexty.png" alt=""></button>
+    </div>
+    <audio class="meuAudio" src=""></audio>
+    <div class="footer">
+        <a class="inicio" href="../index.html">
+            <img class="home-img" src="../img/home.png" alt="">
+            <h3>inicio</h3>
+        </a>
+        <div class="som">
+            <img class="soundIcon" src="../img/sound.png" alt="">
+            <input type="range" id="sound" value="100" min="0" max="100" step="0.1">
+        </div>
+    </div>
+    <script type="module" src="../angry.js"></script>
+</body>
+
+</html>
