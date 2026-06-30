@@ -29,15 +29,22 @@ const progress = document.querySelector("#progress");
 const volumeSlider = document.getElementById("sound");
 const volumeIcon = document.querySelector(".soundIcon");
 
+function atualizarBarraVolume() {
+  volumeSlider.style.backgroundSize = `${volumeSlider.value}% 100%`;
+}
+atualizarBarraVolume();
+
 volumeSlider.addEventListener("input", () => {
   audio.volume = volumeSlider.value / 100;
 
+  atualizarBarraVolume();
+
   if (volumeSlider.value == 0) {
     volumeIcon.classList.add("mutado");
-    volumeIcon.src = "/img/nosound.png";
+    volumeIcon.src = "../img/nosound.png";
   } else {
     volumeIcon.classList.remove("mutado");
-    volumeIcon.src = "/img/sound.png";
+    volumeIcon.src = "../img/sound.png";
   }
 });
 
@@ -45,14 +52,15 @@ volumeIcon.addEventListener("click", () => {
   volumeIcon.classList.toggle("mutado");
 
   if (volumeIcon.classList.contains("mutado")) {
-    volumeIcon.src = "/img/nosound.png";
+    volumeIcon.src = "../img/nosound.png";
     volumeSlider.value = 0;
     audio.volume = 0;
   } else {
-    volumeIcon.src = "/img/sound.png";
+    volumeIcon.src = "../img/sound.png";
     volumeSlider.value = 100;
     audio.volume = 1;
   }
+  atualizarBarraVolume();
 });
 
 const titulo = document.querySelector(".titulo");
@@ -68,6 +76,12 @@ function carregarMusica() {
   audio.src = playlist[musicaAtual].arquivo;
 }
 carregarMusica();
+
+function atualizarBarraProgresso() {
+  const porcentagem = (progress.value / progress.max) * 100;
+
+  progress.style.backgroundSize = `${porcentagem}% 100%`;
+}
 
 btnNext.addEventListener("click", () => {
   const estavaTocando = !audio.paused;
@@ -124,12 +138,15 @@ function formatarTempo(segundos) {
 
 audio.addEventListener("loadedmetadata", () => {
   progress.max = audio.duration;
+  atualizarBarraProgresso();
 });
 audio.addEventListener("timeupdate", () => {
   progress.value = audio.currentTime;
+  atualizarBarraProgresso();
 });
 progress.addEventListener("input", () => {
   audio.currentTime = progress.value;
+  atualizarBarraProgresso();
 });
 
 // Atualiza o tempo atual conforme a música toca
