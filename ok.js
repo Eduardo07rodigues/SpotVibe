@@ -2,8 +2,8 @@ const playlist = [
   {
     nome: "Creep",
     artista: "RadioHead",
-    arquivo: "../musics/ok/creep.mp3",
-    capa: "../img/Creep.jpg",
+    arquivo: "../musics/ok/Creep.mp3",
+    capa: "../img/creep.jpg",
   },
   {
     nome: "Join the Murder",
