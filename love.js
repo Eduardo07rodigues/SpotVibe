@@ -2,20 +2,20 @@ const playlist = [
   {
     nome: "Out Of My League",
     artista: "Fitz and The Tantrums",
-    arquivo: "/musics/love/outofmyleague.mp3",
-    capa: "/img/outofmyleague.jpg",
+    arquivo: "../musics/love/outofmyleague.mp3",
+    capa: "../img/outofmyleague.jpg",
   },
   {
     nome: "I Wanna Be Yours",
     artista: "Arctic Monkeys",
-    arquivo: "/musics/love/IWannaBeYours.mp3",
-    capa: "/img/iwannabeyours.jpg",
+    arquivo: "../musics/love/IWannaBeYours.mp3",
+    capa: "../img/iwannabeyours.jpg",
   },
   {
     nome: "BabyDoll",
     artista: "Dominic Fike",
-    arquivo: "/musics/love/Babydoll.mp3",
-    capa: "/img/babydoll.avif",
+    arquivo: "../musics/love/Babydoll.mp3",
+    capa: "../img/babydoll.avif",
   },
 ];
 

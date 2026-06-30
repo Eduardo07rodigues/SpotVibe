@@ -2,20 +2,20 @@ const playlist = [
   {
     nome: "Duality",
     artista: "Slipknot",
-    arquivo: "/musics/angry/duality.mp3",
-    capa: "/img/duality.jpg",
+    arquivo: "../musics/angry/duality.mp3",
+    capa: "../img/duality.jpg",
   },
   {
     nome: "Rollin",
     artista: "Limp Bizkit",
-    arquivo: "/musics/angry/rolling.mp3",
-    capa: "/img/rollin.jpg",
+    arquivo: "../musics/angry/rolling.mp3",
+    capa: "../img/rollin.jpg",
   },
   {
     nome: "Toxicity",
     artista: "System Of A Down",
-    arquivo: "/musics/angry/toxicity.mp3",
-    capa: "/img/toxicity.jpg",
+    arquivo: "../musics/angry/toxicity.mp3",
+    capa: "../img/toxicity.jpg",
   },
 ];
 

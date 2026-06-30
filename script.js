@@ -3,22 +3,22 @@ const playlist = [
     nome: "Free Fall",
     artista: "Rainbow Kitten Surprise",
     arquivo:
-      "/musics/sad/Rainbow Kitten Surprise - It's Called Freefall [Official Video] - Rainbow Kitten Surprise (youtube).mp3",
-    capa: "/img/freefall.jpg",
+      "../musics/sad/Rainbow Kitten Surprise - It's Called Freefall [Official Video] - Rainbow Kitten Surprise (youtube).mp3",
+    capa: "../img/freefall.jpg",
   },
   {
     nome: "Losing Interest",
     artista: "Hiloh Dynast",
     arquivo:
-      "/musics/sad/Shiloh Dynasty & CuBox - Losing Interest (Lyrics) - Aurora Vibes (youtube).mp3",
-    capa: "/img/losingInterest.jpg",
+      "../musics/sad/Shiloh Dynasty & CuBox - Losing Interest (Lyrics) - Aurora Vibes (youtube).mp3",
+    capa: "../img/losingInterest.jpg",
   },
   {
     nome: "idfc",
     artista: "Blackbear",
     arquivo:
-      "/musics/sad/blackbear - idfc (Lyrics) - Aurora Vibes (youtube).mp3",
-    capa: "/img/idfc.jpg",
+      "../musics/sad/blackbear - idfc (Lyrics) - Aurora Vibes (youtube).mp3",
+    capa: "../img/idfc.jpg",
   },
 ];
 

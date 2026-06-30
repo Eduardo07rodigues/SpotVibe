@@ -2,20 +2,20 @@ const playlist = [
   {
     nome: "Please Don't Go",
     artista: "Franky Perez",
-    arquivo: "/musics/happy/BabyPleaseDon'tGo.mp3",
-    capa: "/img/jointhemurder.jpg",
+    arquivo: "../musics/happy/BabyPleaseDon'tGo.mp3",
+    capa: "../img/jointhemurder.jpg",
   },
   {
     nome: "Girl From North",
     artista: "The Lions",
-    arquivo: "/musics/happy/GirlfromtheNorthCountry.mp3",
-    capa: "/img/girlfromnorthcountry.jpg",
+    arquivo: "../musics/happy/GirlfromtheNorthCountry.mp3",
+    capa: "../img/girlfromnorthcountry.jpg",
   },
   {
     nome: "Set My Body Free",
     artista: "The White Buffalo",
-    arquivo: "/musics/happy/theWhiteBuffalo.mp3",
-    capa: "/img/setmybodyfree.jpg",
+    arquivo: "../musics/happy/theWhiteBuffalo.mp3",
+    capa: "../img/setmybodyfree.jpg",
   },
 ];
 

@@ -2,20 +2,20 @@ const playlist = [
   {
     nome: "Creep",
     artista: "RadioHead",
-    arquivo: "/musics/ok/creep.mp3",
-    capa: "/img/Creep.jpg",
+    arquivo: "../musics/ok/creep.mp3",
+    capa: "../img/Creep.jpg",
   },
   {
     nome: "Join the Murder",
     artista: "The White Buffalo",
-    arquivo: "/musics/ok/ComeJoinTheMurder.mp3",
-    capa: "/img/jointhemurder.jpg",
+    arquivo: "../musics/ok/ComeJoinTheMurder.mp3",
+    capa: "../img/jointhemurder.jpg",
   },
   {
     nome: "One Last Breath",
     artista: "Creed",
-    arquivo: "/musics/ok/One Last Breath.mp3",
-    capa: "/img/onelastbreath.jpg",
+    arquivo: "../musics/ok/One Last Breath.mp3",
+    capa: "../img/onelastbreath.jpg",
   },
 ];
 
